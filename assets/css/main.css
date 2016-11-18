@@ -747,7 +747,7 @@
 /* Basic */
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), url("images/bg(7).jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -1081,7 +1081,14 @@
 	}
 
 /* Me */
+	#me {
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0+26,0+30,0.48+100 */
+		background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0) 1%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.48) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0) 1%,rgba(0,0,0,0) 26%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.48) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg,  rgba(0,0,0,0) 1%,rgba(0,0,0,0) 26%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.48) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#7a000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+	}
 	#me .pic {
 		position: relative;
 		display: block;
@@ -1101,9 +1108,15 @@
 /* Footer */
 
 	#footer {
+		background-color: rgba(0, 0, 30, 0.5);
+		opacity: 1;
 		color: #ccc;
 		color: rgba(255, 255, 255, 0.45);
 	}
+
+		#footer p {
+			color: #ccc;
+		}
 
 		#footer a {
 			color: #ddd;
@@ -1120,6 +1133,7 @@
 
 		#footer .copyright li {
 			display: inline-block;
+			color: #ccc;
 		}
 
 			#footer .copyright li:before {
@@ -1249,6 +1263,7 @@
 					-webkit-transition: opacity .25s ease-in-out;
 					-ms-transition: opacity .25s ease-in-out;
 					transition: opacity .25s ease-in-out;
+					color: #00001E;
 				}
 
 					#nav a:before {
