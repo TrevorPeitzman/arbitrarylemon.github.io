@@ -49,9 +49,7 @@
 									<h2>Work</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									My past projects, achievements, and experience.
 								</p>
 								<section>
 									<div class="row">
@@ -104,29 +102,50 @@
 						<!-- Contact -->
 							<article id="contact" class="panel">
 								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="6u 12u$(mobile)">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="6u$ 12u$(mobile)">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="12u$">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="12u$">
-												<textarea name="message" placeholder="Message" rows="8"></textarea>
-											</div>
-											<div class="12u$">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
+								<h2>Get in Touch</h2>
+								<p>Questions? Comments? I'm happy to hear them.</p>
+
+								<!-- LOL everything is mandatory-->
+								<!--<p>An asterisk (<span class="required_star"> * </span>) indicates a mandatory field.</p>-->
+
+							</header>
+							<script src="feedbackformvalidation.js"></script>
+							<script>
+							required.add('Name','NOT_EMPTY','Name');
+							required.add('Email','EMAIL','Email');
+							required.add('Subject','NOT_EMPTY','Subject');
+							required.add('Message','NOT_EMPTY','Message');
+						//required.add('AntiSpam','NOT_EMPTY','Anti-Spam Question');
+
+							function checkMessageCount() {
+								var maxlen = 1000;
+								var len = document.getElementById('entry_1654389751').value.length;
+								document.getElementById('charsleft').innerHTML = 'You have ' + (maxlen - len) + ' characters remaining';
+							}
+							</script>
+
+							<form action="https://docs.google.com/forms/d/e/1FAIpQLSd1n_r6i4XO5-C97i0PhWlKvCJ1sYWY2nnAyU4JPInOd0OnZQ/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+								<div class="row 50%">
+									<div class="6u 12u$(mobile)">
+										<input type="text" placeholder="Name" name="entry.1019677557" value="" class="form-control" id="entry_1019677557" dir="auto" aria-label="Name" aria-required="true" required="" title="" maxlength="100">
 									</div>
-								</form>
+									<div class="6u$ 12u$(mobile)">
+										<input type="text" placeholder="Email" name="entry.1479206889" value="" class="form-control" id="entry_1479206889" dir="auto" aria-label="Email  Please enter a valid email" aria-required="true" required="" pattern="(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|&quot;(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*&quot;)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Please enter a valid email">
+									</div>
+									<div class="12u$ 12u$(mobile)">
+										<input type="text" placeholder="Subject" name="entry.2008090531" value="" class="form-control" id="entry.2008090531" dir="auto" aria-label="Subject" aria-required="true" required="" title="" maxlength="100" >
+									</div>
+									<div class="12u$">
+										<textarea placeholder="Message" name="entry.1654389751" rows="8" cols="0" class="form-control" id="entry_1654389751" dir="auto" aria-label="Message" maxlength="1000" onkeyup="checkMessageCount()"></textarea>
+										<div id="charsleft" class="text">You have 1000 characters remaining</div><br />
+									</div>
+									<div class="12u$">
+										<ul class="actions">
+			          			<li><input type="submit" name="submit" value="Send Message" /></li>
+										</ul>
+									</div>
+								</div>
+			        	</form>
 							</article>
 
 					</div>

@@ -954,7 +954,7 @@
 	.button {
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #222222;
+		background-color: #00001E;
 		color: #ffffff;
 		border: 0;
 		cursor: pointer;
@@ -970,7 +970,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #333333;
+			background-color: #000052;
 		}
 
 		input[type="button"]:active,
