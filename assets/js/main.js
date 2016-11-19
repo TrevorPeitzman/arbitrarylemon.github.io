@@ -46,7 +46,7 @@
 
 				var	$body = $('body'),
 					$main = $('#main'),
-					$panels = $main.find('.panel'),
+					$panels = $main.find('.panel,.socpanel'),
 					$hbw = $('html,body,window'),
 					$footer = $('#footer'),
 					$wrapper = $('#wrapper'),
