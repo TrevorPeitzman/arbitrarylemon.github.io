@@ -12,7 +12,7 @@ in the "work" section.
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 7em; /* Location of the box */
+    padding-top: 4em; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -75,8 +75,12 @@ in the "work" section.
 .modal-body {
   padding: 2px 16px;
   background-color: #FFF;
-
 }
+
+  .modal-body iframe {
+    margin: 0 auto;
+    display: block;
+  }
 
 .modal-footer {
     padding: 2px 16px;
