@@ -57,7 +57,7 @@ in the "work" section.
 }
 
 .close:hover, .close:focus {
-    color: #000;
+    color: #D9D9D9;
     text-decoration: none;
     cursor: pointer;
 }
@@ -81,5 +81,22 @@ in the "work" section.
 .modal-footer {
     padding: 2px 16px;
     background-color: #000052;
-		color: white;
+		color: #D9D9D9;
 }
+
+  .modal-footer a{
+  		color: #ffffff;
+  }
+
+    .modal-footer a:hover {
+      color: #D9D9D9;
+    }
+
+.mod1 .modal-footer a.pglnk{
+  color: white;
+  float: right;
+}
+
+  .mod1 .modal-footer a.pglnk:hover{
+    color: #D9D9D9;
+  }
